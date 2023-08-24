@@ -1,0 +1,197 @@
+<!--
+o Name: Byubjung Kang
+o Date: 03 12 2023
+o Section: CST 8285 314
+o Lab: assignment 1
+o File: courses.html
+o This page included some information about my curriculum. 
+o List of the related courses that i have finished so far.   
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="author" content="Byubjung Kang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><em>Home</em></a></li>
+                <li><a href="about.html"><em>About</em></a></li>
+                <li><a href="courses.html"><em>Courses</em></a></li>
+            </ul>    
+        </nav>
+    </header>
+
+    <main>
+        <div class="f1">
+            <div class="f2">
+                <div class="f3 t-">
+                    <div class="f4 t--">
+						<h1>Curriculum</h1>
+						<div class="search-container">
+							<label for="search-bar">Search Course: </label>
+							<input type="text" id="search-bar" onkeyup="searchCourses()" placeholder="Enter course name">
+						</div>
+						
+						<div class="filter-container">
+							<label for="level-filter">Filter by Level: </label>
+							<select id="level-filter" onchange="filterCourses()">
+								<option value="">All Levels</option>
+								<option value="1">Level 1</option>
+								<option value="2">Level 2</option>
+								<option value="3">Level 3</option>
+							</select>
+						</div>
+						
+						<div class="sort-container">
+							<label for="sort-select">Sort by Level: </label>
+							<select id="sort-select" onchange="sortCourses()">
+								<option value="none">Not Sorted</option>
+								<option value="low-to-high">Lowest to Highest</option>
+								<option value="high-to-low">Highest to Lowest</option>
+							</select>
+						</div>
+						
+						<div class="course-list">
+							<div class="course">
+								<div class="course-info">
+									<h2>Intro to Computer Programming</h2>
+									<h3>Level 1</h3>
+									<p>Course Description: develop introductory knowledge of computer programming </p>
+									<p>Course Section: CST8116</p>
+								</div>
+								<img src="img/lvl1prog.png" alt="Course 1 Image">
+							</div>
+							
+							<div class="course">
+								<div class="course-info">
+									<h2>Computer Essentials</h2>
+									<h3>Level 1</h3>
+									<p>Course Description: The essentials of computer software, hardware, and laptop management</p>
+									<p>Course Code: CST8101</p>
+								</div>
+								<img src="img/lvl1ess.png" alt="Course 2 Image">
+							</div>
+							
+							<div class="course">
+								<div class="course-info">
+									<h2>Introduction to Database</h2>
+									<h3>Level 1</h3>
+									<p>Course Description: learn the fundamentals of relational databases 
+										design using Entity Relation Diagrams (ERDs), and use Structured Query Language (SQL)</p>
+									<p>Course Code: CST8215</p>
+								</div>
+								<img src="img/lvl1db.png" alt="Course 3 Image">
+							</div>
+							
+							<div class="course">
+								<div class="course-info">
+									<h2>Database Systems</h2>
+									<h3>Level 2</h3>
+									<p>Course Description: Database systems can automate data processing tasks as well 
+										as tie into the security of information technology systems</p>
+									<p>Course Code: CST2355 </p>
+								</div>
+								<img src="img/lvl2db.png" alt="Course 4 Image">
+							</div>
+
+							<div class="course">
+								<div class="course-info">
+									<h2>GNU/Linux</h2>
+									<h3>Level 2</h3>
+									<p>Course Description:Operating systems form the backbone of information technology systems
+										 coordinating the interaction between hardware and software</p>
+									<p>Course Code: CST8102 </p>
+								</div>
+								<img src="img/lvl2linux.png" alt="Course 5 Image">
+							</div>
+
+							<div class="course">
+								<div class="course-info">
+									<h2>Object Oriented Programming (Java)</h2>
+									<h3>Level 2</h3>
+									<p>Course Description:  a firm understanding of Object-Oriented Programming (OOP) concepts.</p>
+									<p>Course Code: CST8284 </p>
+								</div>
+								<img src="img/lvl2java.png" alt="Course 6 Image">
+							</div>
+
+							<div class="course">
+								<div class="course-info">
+									<h2>Web Programming</h2>
+									<h3>Level 2</h3>
+									<p>Course Description: develop basic skills of web programming, website design and implementation</p>
+									<p>Course Code: CST8285 </p>
+								</div>
+								<img src="img/lvl2web.png" alt="Course 7 Image">
+							</div>
+
+							<div class="course">
+								<div class="course-info">
+									<h2>System Analysis and Design</h2>
+									<h3>Level 3</h3>
+									<p>Course Description: Complex information technology systems require extensive planning and design</p>
+									<p>Course Code: CST2234 </p>
+								</div>
+								<img src="img/lvl3sys.png" alt="Course 8 Image">
+							</div>
+							
+							<div class="course">
+								<div class="course-info">
+									<h2>Mobile Graphical Interface Programming</h2>
+									<h3>Level 3</h3>
+									<p>Course Description: Mobile devices play an instrumental part of everyday life, thus requiring knowledge of mobile graphical user interface development.</p>
+									<p>Course Code: CST2335 </p>
+								</div>
+								<img src="img/lvl3mobile.png" alt="Course 9 Image">
+							</div>
+
+							<div class="course">
+								<div class="course-info">
+									<h2>Network Programming</h2>
+									<h3>Level 3</h3>
+									<p>Course Description: Software programming in today's environment requires detailed knowledge of the underlying network topology, its implementation and programmi...</p>
+									<p>Course Code: CST8109 </p>
+								</div>
+								<img src="img/lvl3network.png" alt="Course 10 Image">
+							</div>
+
+							<div class="course">
+								<div class="course-info">
+									<h2>Object Oriented Programming with Design Patterns</h2>
+									<h3>Level 3</h3>
+									<p>Course Description: Design patterns are programming architecture solutions to common challenges faced in software implementation.</p>
+									<p>Course Code: CST8288 </p>
+								</div>
+								<img src="img/lvl3OOP.png" alt="Course 11 Image">
+							</div>
+
+							<div class="course">
+								<div class="course-info">
+									<h2>Business Programming</h2>
+									<h3>Level 3</h3>
+									<p>Course Description: Information systems built using the COBOL programming language support important institutions such as government services and the banking se...</p>
+									<p>Course Code: CST8283 </p>
+								</div>
+								<img src="img/lvl3cobol.png" alt="Course 12 Image">
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="author">Formatting and code by Byubjung Kang.</p>
+
+    </footer>
+	<script src="js11.js"></script>
+
+</body>
+</html>
